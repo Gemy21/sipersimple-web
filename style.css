@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.hero{
+    position: relative;
+    background: #825dd2;
+    height: 100vh;
+
+}
+
+.container{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+background: -webkit-radial-gradient(circle, #bd9fff, transparent, transparent);
+z-index:1;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 1000;
+}
+
+header nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+}
+
+header .logo{
+   color: #fff;
+   text-decoration: none;
+   font-size: 40px;
+   letter-spacing: 2px;
+   font-family: "Anton", sans-serif;
+}
+
+header .nav_links{
+    display: flex;
+    gap: 40px; 
+}
+
+header .nav_links a{
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    transition: 0.3s;
+
+}
+
+header .nav_links a:hover{
+    color: rgb(3, 5, 134);
+    
+}
+
+.hero .container{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#cans{
+position: absolute;
+width: 35%;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+transition: all cubic-bezier( 0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf{
+    position: absolute;
+    width: 12%;
+    top: 60%;
+    left: 10%;
+    z-index: 10;
+    transition: all cubic-bezier( 0.19, 1, 0.22, 1) 0.5s;
+}
+
+#blackberry1{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 10%;
+    transform: translate(-50%, -50%); 
+    width: 13vw;
+}
+
+#blackberry2{
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    width: 15vw;
+    transform: translate(-50%, -50%); 
+    
+}
+
+#blackberry3{
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    width: 6vw;
+    transform: translate(-50%, -50%); 
+    
+}
+
+#coconoutleaf{
+    position: absolute;
+    width: 20%;
+    top: 10%;
+    right: 0%;
+
+}
+
+.hero h1{
+    font-size:28vw;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-family: "Anton", sans-serif;
+}
+
+
+.about{
+    padding: 100px 0;
+    height: 100vh;
+
+}
+
+.about .text{
+    width: 50%;
+}
+
+.about .text h2{
+    font-size: 3.5vw;
+    color: #0d071c;
+    position: relative;
+    z-index: 20;
+}
+
+.about .text h2 span{
+    color: #825dd2;
+}
+
+.about .text .boxes{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.about .text .boxes .box img{
+    width: 25%;
+    rotate: 60deg;
+}
+
+.about .text .boxes .box h4{
+    color:#0d071c;
+    margin: 20px 0 10px;
+    font-size: 1.1vw;
+
+}
+
+.about .text .boxes .box p{
+    font-size: 0.9vw;
+    color: 4d4d4d;
+}
+
+.about .text .btn{
+    padding: 15px 45px;
+    font-size: 18px;
+    border: 1px solid #825dd2;
+    background: #825dd2;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold ;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.about .text .btn:hover{
+    background:transparent;
+    color: #825dd2;
+}
+
+.stand{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background: #bd9fff;
+    align-items: center;
+    padding-top: 130px;
+}
+.stand .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.stand img{
+    width: 55%;
+}
+
+.stand h3{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 26vh;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 9px;
+    color:#6a47b4 ;
+}
